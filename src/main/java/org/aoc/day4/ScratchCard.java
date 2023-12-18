@@ -40,4 +40,15 @@ public class ScratchCard {
 
         return Math.pow(2, winningCounter-1);
     }
+
+    public int winningNumbers() {
+        int winningCounter = 0;
+        for (int i : this.winningNumbers) {
+            if (this.numbers.contains(i)) {
+                winningCounter++;
+            }
+        }
+
+        return winningCounter;
+    }
 }
